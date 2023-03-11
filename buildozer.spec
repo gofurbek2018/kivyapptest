@@ -191,7 +191,8 @@ fullscreen = 0
 # (str) launchMode to set for the main activity
 #android.manifest.launch_mode = standard
 
-# (list) Android additional libraries to copy into libs/armeabi
+# (list) Android additional libraries to copy into libs/
+eabi
 #android.add_libs_armeabi = libs/android/*.so
 #android.add_libs_armeabi_v7a = libs/android-v7/*.so
 #android.add_libs_arm64_v8a = libs/android-v8/*.so
@@ -219,7 +220,7 @@ fullscreen = 0
 #android.copy_libs = 1
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
-android.arch = x86_64
+android.arch = armeabi-v7a, arm64-v8a, x86, x86_64
 
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing
